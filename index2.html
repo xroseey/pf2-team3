@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  >
+  <style>
+    body {
+      background-color: white;
+    }
+    h1 {
+      color: blue;
+      text-align: center;
+    }
+    p {
+      color: red;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    button {
+      border: none;
+      color: rgb(30, 255, 0);
+      padding: 32px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 64px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+      border: 5px solid;
+      border-color: blue;
+      border-radius: 30%;
+
+      transition-duration: 0.4s;
+      background-color: #4caf50; /* Green */
+    }
+  </style>
+  <body>
+    <h1>Wiosenna strona z krową co muczy</h1>
+    <p>Bo jej bardzo w brzuchu burczy...:)</p>
+    <img src="krowa.jpg" img location="center" />
+
+    <button onclick="myFunction()">MU!</button>
+
+    <p id="demo"></p>
+    <audio id="sound1" src="cow.mp3" preload="auto"></audio>
+
+    <script>
+      function myFunction() {
+        document.getElementById('demo').innerHTML = ''
+        document.getElementById('sound1').play()
+      }
+    </script>
+  </body>
+</html>
